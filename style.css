@@ -1,0 +1,147 @@
+/* Pengaturan dasar untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    /* Warna Background 1: #006633 */
+    background-color: #006633;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Kotak 2: #30C0A5 */
+.container {
+    background-color: #30C0A5;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Pengaturan Header */
+header .logo {
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+/* Elemen 4: #F5E26E untuk Teks Judul */
+header h1 {
+    color: #F5E26E;
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header h2 {
+    color: #FFF; /* Putih agar kontras */
+    font-size: 1.2em;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+/* Galeri Foto */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Agar responsif di HP */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #009783; /* Pemisah */
+    padding-top: 30px;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 230px; /* Ukuran maks per gambar */
+    height: auto;
+    border-radius: 10px;
+    /* Elemen 3: #009783 untuk border gambar */
+    border: 4px solid #009783;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Bagian Registrasi */
+.registration {
+    margin-top: 30px;
+    border-top: 2px solid #009783; /* Pemisah */
+    padding-top: 20px;
+}
+
+/* Elemen 4: #F5E26E untuk Sub-Judul */
+.registration h3 {
+    color: #F5E26E;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.registration p {
+    color: #FFF; /* Teks putih agar mudah dibaca */
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Tombol WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    /* Elemen 3: #009783 untuk tombol */
+    background-color: #009783;
+    /* Elemen 4: #F5E26E untuk teks tombol */
+    color: #F5E26E;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efek saat kursor menyentuh tombol */
+.whatsapp-button:hover {
+    background-color: #F5E26E; /* Warna bertukar */
+    color: #006633;
+    transform: scale(1.05);
+}
+
+/* Bagian QR Code */
+.qr-code {
+    margin-top: 25px;
+}
+
+.qr-code p {
+    font-size: 1em;
+    color: #FFF;
+}
+
+.qr-code img {
+    max-width: 180px;
+    background-color: white; /* Latar belakang putih untuk QR Code */
+    padding: 10px;
+    border-radius: 8px;
+    border: 4px solid #F5E26E; /* Border kuning */
+}
+
+/* Membuat Tampilan Responsif (untuk HP) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .gallery-img {
+        max-width: 80%; /* Gambar akan memenuhi lebar di HP */
+    }
+}
